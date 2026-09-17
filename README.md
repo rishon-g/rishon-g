@@ -2,7 +2,7 @@
 
 I am a software engineering enthusiast currently pursuing a joint major in Computer Science and Business at Simon Fraser University. I enjoy tackling complex problems, optimizing code, and building robust applications from the ground up. 
 
-<div align="left">
+<div align="middle">
   <a href="https://www.linkedin.com/in/rishon-ghosh/">
     <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
