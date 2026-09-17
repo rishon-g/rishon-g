@@ -2,6 +2,8 @@
 
 I am a software engineering enthusiast currently pursuing a joint major in Computer Science and Business at Simon Fraser University. I enjoy tackling complex problems, optimizing code, and building robust applications from the ground up. 
 
+Currently, I'm actively seeking Software Engineering Co-op opportunities where I can contribute to impactful projects and continue growing as a developer.
+
 <div align="middle">
   <a href="https://www.linkedin.com/in/rishon-ghosh/">
     <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -13,8 +15,6 @@ I am a software engineering enthusiast currently pursuing a joint major in Compu
     <img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </div>
-
-Currently, I'm actively seeking Software Engineering Co-op opportunities where I can contribute to impactful projects and continue growing as a developer.
 
 ## 🚀 About Me
 
