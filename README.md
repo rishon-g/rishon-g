@@ -11,9 +11,6 @@ Currently, I'm actively seeking Software Engineering Co-op opportunities where I
   <a href="https://github.com/rishon-g/rishon-g/blob/main/resume.pdf">
     <img src="https://img.shields.io/badge/Resume-%232370FF.svg?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Resume" />
   </a>
-  <a href="github.com/rishon-g">
-    <img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
 </div>
 
 ## 🚀 About Me
