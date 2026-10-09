@@ -59,7 +59,8 @@
 
 <p align="center">
   Open to co-op roles, systems-design chats and project collaborations.<br />
-  <b><a href="mailto:rishonghosh@icloud.com">rishonghosh@icloud.com</a></b> &nbsp;·&nbsp; <b><a href="https://www.linkedin.com/in/rishon-ghosh/">LinkedIn</a></b> &nbsp;·&nbsp; <b><a href="resume.pdf">Resume</a></b>
+  <b><a href="mailto:rishonghosh@icloud.com">rishonghosh@icloud.com</a></b> &nbsp;·&nbsp; <b><a href="https://www.linkedin.com/in/rishon-ghosh/">LinkedIn</a></b> &nbsp;·&nbsp; <b><a href="resume.pdf">Resume</a></b><br />
+  <sub>The resume is compiled from its <a href="resume.tex">LaTeX source</a> by GitHub Actions on every change.</sub>
 </p>
 
 <p align="center">
