@@ -1,0 +1,42 @@
+name: Build resume
+
+# Compiles resume.tex into resume.pdf whenever the LaTeX source changes,
+# and commits the fresh PDF so the profile's Resume button always opens it.
+on:
+  push:
+    branches: [main]
+    paths:
+      - resume.tex
+      - .github/workflows/resume.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-resume
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+
+      - name: Commit updated PDF
+        run: |
+          if git diff --quiet -- resume.pdf; then
+            echo "resume.pdf is already up to date."
+            exit 0
+          fi
+          git config user.name "Rishon Ghosh"
+          git config user.email "rishonghosh@icloud.com"
+          git add resume.pdf
+          git commit -m "chore(resume): rebuild resume.pdf from resume.tex"
+          git push
