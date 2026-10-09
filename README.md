@@ -1,70 +1,70 @@
-<div align="center">
+<p align="center">
+  <img src="assets/header.svg" width="100%" alt="Rishon Ghosh: Computer Science + Business at Simon Fraser University. Backend, distributed systems and cloud. Open to software engineering co-op." />
+</p>
 
-# Rishon Ghosh
+<p align="center">
+  <a href="https://www.linkedin.com/in/rishon-ghosh/"><img src="assets/btn-linkedin.svg" height="40" alt="LinkedIn" /></a>&nbsp;
+  <a href="resume.pdf"><img src="assets/btn-resume.svg" height="40" alt="Resume" /></a>&nbsp;
+  <a href="mailto:rishonghosh@icloud.com"><img src="assets/btn-email.svg" height="40" alt="Email" /></a>
+</p>
 
-**Computer Science & Business @ Simon Fraser University**
-Systems, algorithms and well-tested software — from search heuristics to distributed services.
+<br />
 
-<a href="https://www.linkedin.com/in/rishon-ghosh/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://github.com/rishon-g/rishon-g/blob/main/resume.pdf"><img src="https://img.shields.io/badge/Resume-2370FF?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Resume" /></a>
-<a href="mailto:rishonghosh@icloud.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email" /></a>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/section-about-light.svg" />
+  <img src="assets/section-about.svg" width="100%" alt="About" />
+</picture>
 
-</div>
+<p align="center">
+  <img src="assets/about.svg" width="100%" alt="School: Simon Fraser University. Major: Computer Science + Business (joint), class of 2028. 3.9 CGPA, Dean's and President's Honour Roll. Focus: backend, distributed systems, cloud infrastructure. Currently building MatchMesh, a fault-tolerant C++20 matchmaking cluster. Open to Software Engineering Co-op. Offline: strength training, the markets, sports." />
+</p>
 
----
+<br />
 
-## About
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/section-projects-light.svg" />
+  <img src="assets/section-projects.svg" width="100%" alt="Featured projects" />
+</picture>
 
-I'm a B.Sc. Computer Science student (joint major with Business) at SFU, graduating December 2028. I like problems where performance and correctness both matter — shrinking a search space, designing for failure, or proving a system behaves before shipping it.
+<p align="center">
+  <a href="https://github.com/rishon-g/flashcart"><img src="assets/project-flashcart.svg" width="49%" alt="FlashCart: serverless flash-sale checkout on AWS. ~6.9k requests/s, 194 ms p95, zero oversold units. Go, Lambda, DynamoDB, SQS, CDK, React." /></a>
+  <a href="https://github.com/rishon-g/matchmesh"><img src="assets/project-matchmesh.svg" width="49%" alt="MatchMesh (in progress): fault-tolerant matchmaking cluster with skill-based lobbies, consistent hashing and replication. C++20, gRPC, Protobuf, CMake, Docker." /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/StormHacks-BlackBay/trustline"><img src="assets/project-trustline.svg" width="49%" alt="TrustLine (StormHacks): live, in-language scam-call warnings for newcomers to Canada. TypeScript, React, Twilio, ElevenLabs, Gemini." /></a>
+  <a href="https://github.com/rishon-g/graphite-gambit"><img src="assets/project-graphite-gambit.svg" width="49%" alt="Graphite Gambit: 2D top-down game with A* pathfinding and a custom collision engine, 71% branch coverage. Java, libGDX, JUnit 5, Mockito, JaCoCo." /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/rishon-g/rubiks-cube-solver"><img src="assets/project-rubiks-cube-solver.svg" width="49%" alt="Rubik's Cube Solver: Kociemba-style two-phase IDA* solver with compact pruning tables. Java, Maven." /></a>
+  <a href="https://github.com/rishon-g/fallhacks-tindog"><img src="assets/project-tindog.svg" width="49%" alt="Tindog (FallHacks 2025): dog-profile matching app built in 12 hours by a 3-person team. Python, Flask, SQLite, Jinja." /></a>
+</p>
 
-- 🔍 **Open to:** Software Engineering Co-op roles
-- 🎓 **Academics:** 3.9 / 4.33 CGPA · Dean's & President's Honour Roll · SFU Undergraduate Open Scholarship · Harvard CS50
-- 🌱 **Currently:** building a fault-tolerant distributed matchmaking cluster in C++20, and a PyTorch match-outcome model for the Premier League
-- 🏋️ **Off-screen:** strength training, following the markets, and playing sports
+<br />
 
-## Featured Projects
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/section-stack-light.svg" />
+  <img src="assets/section-stack.svg" width="100%" alt="Tech stack" />
+</picture>
 
-| Project | Stack | Highlights |
-| :-- | :-- | :-- |
-| [**MatchMesh**](https://github.com/rishon-g/matchmesh)<br><sub>In progress</sub> | C++20 · gRPC | Fault-tolerant distributed matchmaking cluster, built phase by phase toward a production-style service. |
-| **Rubik's Cube Solver**<br><sub>CMPT 225</sub> | Java | Optimal solutions via **IDA\*** within a 10 s limit; pattern databases with combinatorial indexing compress a **43-quintillion** state space into **~2 MB** for O(1) heuristic lookups. |
-| **Graphite Gambit**<br><sub>CMPT 276 · Team lead</sub> | Java · libGDX · Maven · JUnit · Mockito · JaCoCo | 2D top-down game; built the map-loading system and collision engine; led weekly agile sprints and merge-conflict protocols; **71% branch coverage** across core packages. |
-| **Tindog**<br><sub>FallHacks 2025</sub> | Python · Flask · SQLite · JavaScript | Full-stack matching app built in 12 hours with a 3-person team; password hashing, secure upload validation and optimized SQL match queries. |
-| **Premier League Predictor**<br><sub>CMPT 310 · In progress</sub> | Python · PyTorch | Team ML project predicting match outcomes; I own the neural-network model. |
+<p align="center">
+  <img src="assets/stack.svg" width="100%" alt="Languages: C++, Go, Java, Python, TypeScript, JavaScript, C, SQL, HTML/CSS, x86-64 assembly. Backend and cloud: AWS Lambda, DynamoDB, SQS, EventBridge, API Gateway, S3 + CloudFront, gRPC, Protobuf, Flask, Supabase, Twilio. Frontend: React, Vite, TanStack Query, Jinja. Infra and DevOps: AWS CDK, Docker, CMake, GitHub Actions, Vercel, Maven, Linux, Git. Testing and performance: JUnit 5, Mockito, JaCoCo, Jest, Vitest, k6, ThreadSanitizer, DynamoDB Local." />
+</p>
 
-## Tech Stack
+<br />
 
-**Languages**
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/section-contact-light.svg" />
+  <img src="assets/section-contact.svg" width="100%" alt="Let's connect" />
+</picture>
 
-<img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
-<img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black" alt="C" />
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
-<img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="SQL" />
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
-<img src="https://img.shields.io/badge/x86--64_Assembly-555555?style=flat-square" alt="x86-64 Assembly" />
+<p align="center">
+  Open to co-op roles, systems-design chats and project collaborations.<br />
+  <b><a href="mailto:rishonghosh@icloud.com">rishonghosh@icloud.com</a></b> &nbsp;·&nbsp; <b><a href="https://www.linkedin.com/in/rishon-ghosh/">LinkedIn</a></b> &nbsp;·&nbsp; <b><a href="resume.pdf">Resume</a></b>
+</p>
 
-**Frameworks & Libraries**
-
-<img src="https://img.shields.io/badge/gRPC-244C5A?style=flat-square&logo=grpc&logoColor=white" alt="gRPC" />
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
-<img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask" />
-<img src="https://img.shields.io/badge/libGDX-E74A45?style=flat-square" alt="libGDX" />
-<img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite" />
-
-**Testing & Tooling**
-
-<img src="https://img.shields.io/badge/JUnit5-25A162?style=flat-square&logo=junit5&logoColor=white" alt="JUnit 5" />
-<img src="https://img.shields.io/badge/Mockito-78A641?style=flat-square" alt="Mockito" />
-<img src="https://img.shields.io/badge/JaCoCo-B22222?style=flat-square" alt="JaCoCo" />
-<img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white" alt="Maven" />
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
-<img src="https://img.shields.io/badge/IntelliJ_IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white" alt="IntelliJ IDEA" />
-<img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code" />
-
-## Let's Connect
-
-I'm always happy to talk about co-op opportunities, systems design, or project collaborations — reach me at **[rishonghosh@icloud.com](mailto:rishonghosh@icloud.com)** or on **[LinkedIn](https://www.linkedin.com/in/rishon-ghosh/)**.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg" />
+    <img src="assets/footer.svg" width="100%" alt="Thanks for stopping by: let's build something reliable." />
+  </picture>
+</p>
