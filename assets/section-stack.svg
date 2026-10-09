@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="56" viewBox="0 0 1200 56" role="img" aria-label="tech stack">
+<title>tech stack</title>
+<style>text{font-family:ui-monospace,'JetBrains Mono','SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace;}</style>
+<text x="2" y="36" font-size="22" font-weight="700" fill="#E6EAF5"><tspan fill="#A78BFA">//</tspan> tech stack</text><line x1="200" y1="29" x2="1198" y2="29" stroke="#1C2747" stroke-width="2"/><line x1="200" y1="29" x2="1198" y2="29" stroke="#A78BFA" stroke-width="2" stroke-dasharray="40 1200"><animate attributeName="stroke-dashoffset" from="1200" to="0" dur="5s" repeatCount="indefinite"/></line>
+</svg>
