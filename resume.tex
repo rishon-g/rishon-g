@@ -1,0 +1,190 @@
+% Rishon Ghosh's LaTeX Resume
+
+\documentclass[letterpaper]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\usepackage{lmodern}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{3.60004pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8.5pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+% --- List Environments ---
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+% --- Item Commands ---
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{1pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% --- Section Entry Commands ---
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\textit{\small#4}} \\
+      \textit{\small#3} & \textbf{\small#2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingThree}[3]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} - \textit{#3} & \textbf{\small#2} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small#2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    \textbf{\Huge Rishon Ghosh} \\ \vspace{1pt}
+    \small {(236) 509-8685} $|$
+    \small {Vancouver, BC} $|$
+    \small \href{mailto:rishonghosh@icloud.com}{{\underline{rishonghosh@icloud.com}}} $|$
+    \href{https://www.linkedin.com/in/rishon-ghosh/}{\underline{linkedin.com/in/rishon-ghosh}} $|$
+    \href{https://github.com/rishon-g}{{\underline{github.com/rishon-g}}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Simon Fraser University}{Expected Grad Date: Dec 2028}
+      {Bachelor of Science, Computer Science (Joint Major with Business) $|$ \textbf{GPA: 3.89}}{Burnaby, BC, Canada}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework}: Algorithms \& Data Structures, Introduction to Software Engineering, Business Technology Management}
+        \resumeItem{\textbf{Awards}: Dean's Honour Roll, President's Honour Roll, SFU Undergraduate Open Scholarship}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer Consultant}{Dec 2025 - Present}
+      {Self-Employed, RG Tech}{Vancouver, BC}
+      \resumeItemListStart
+         \resumeItem{Architected Python and Flask REST backends for \textbf{3 small-business clients}, turning existing sales and inventory data into reports}
+         \resumeItem{Engineered SQL schemas and ETL scripts consolidating spreadsheet and POS data, saving \textbf{12 hours} of manual entry weekly}
+         \resumeItem{Optimized database performance through indexing and query refactoring, reducing average API response times by \textbf{40\%}}
+         \resumeItem{Implemented secure authentication with password hashing and input validation to protect client and customer records}
+         \resumeItem{Executed client discovery, scoping, and sprint planning to translate business needs into technical requirements delivered on schedule}
+    \resumeItemListEnd
+    
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+  \resumeProjectHeading
+  {\textbf{\href{https://github.com/StormHacks-BlackBay/trustline}{TrustLine}} $|$ \emph{TypeScript, React, Node.js, ElevenLabs, Gemini, Twilio, Supabase, Docker}}{Oct 2026}
+  \resumeItemListStart
+    \resumeItem{Architected a real-time audio intelligence pipeline streaming live phone calls from Twilio Media Streams to ElevenLabs Scribe v2 Realtime over WebSockets, transcribing \textbf{8 kHz} telephony audio with no transcoding and warning callers mid-call in \textbf{5 languages}}
+    \resumeItem{Engineered a dual-layer scam detection engine fusing a \textbf{$\sim$0.01 ms} rules layer across \textbf{12 scam tactics} with schema-constrained, Zod-validated LLM scoring (Google Gemini), achieving \textbf{100\% precision and recall} with \textbf{0 false positives} on an 18-call labelled set at \textbf{1.1 s} median latency}
+    \resumeItem{Established an evaluation and CI framework measuring precision, recall and alert latency, gating every push through GitHub Actions with \textbf{187 automated tests} across \textbf{28 suites}}
+    \resumeItem{Hardened security and privacy with Twilio signature verification on webhooks and media streams, single-use transcription tokens, on-device PII redaction, consent-gated sharing and \textbf{10-minute} call caps}
+    \resumeItem{Orchestrated production deployment on \textbf{\$0} infrastructure: a Dockerized call server on Railway with health-checked, path-filtered auto-deploys, and a React/Vite frontend with serverless APIs on Vercel}
+  \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/rishon-g/flashcart}{FlashCart}} $|$ \emph{Go, TypeScript, React, AWS Lambda, API Gateway, DynamoDB, SQS, CDK}}{Sep 2026}
+      \resumeItemListStart
+        \resumeItem{Spearheaded a serverless flash-sale API in Go on AWS Lambda and API Gateway, load-tested with k6 at \textbf{1,000+} concurrent users}
+        \resumeItem{Devised oversell-proof inventory reservations with DynamoDB conditional writes and idempotency keys, recording \textbf{0} oversold units}
+        \resumeItem{Orchestrated asynchronous order fulfillment through SQS with dead-letter queue retries, holding checkout p99 latency under \textbf{150ms}}
+        \resumeItem{Established infrastructure as code with AWS CDK in TypeScript and GitHub Actions CI/CD, deploying the full stack on every merge}
+      \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/rishon-g/graphite-gambit}{Graphite Gambit}} $|$ \emph{Java, libGDX, JUnit, Mockito, Maven, JaCoCo}}{Jan 2026}
+      \resumeItemListStart
+        \resumeItem{Led a team building a 2D top-down game in Java and libGDX, establishing weekly agile sprints and a merge-conflict protocol}
+        \resumeItem{Created a map-loading system and collision engine, using mathematical proofs in testing to verify safe entity movement and bounds}
+        \resumeItem{Automated a testing suite with JUnit and Mockito, achieving \textbf{71\%} branch coverage across core game packages}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/rishon-g/rubiks-cube-solver}{Rubik's Cube Solver}} $|$ \emph{Java}}{Oct 2025}
+      \resumeItemListStart
+        \resumeItem{Programmed an optimal Rubik's Cube solver in Java using Iterative Deepening A* (IDA*) search, finding solutions in under \textbf{10s}}
+        \resumeItem{Constructed memory-efficient pattern databases using combinatorial indexing and factorial mapping for \textbf{$O(1)$} heuristic lookups}
+        \resumeItem{Compressed a \textbf{43-quintillion} state space into a \textbf{$\sim$2MB} footprint, keeping heuristic data fully in memory during search}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \small{\item{
+      \textbf{Languages}: Go, C++, TypeScript, Java, Python, SQL, C, JavaScript, HTML/CSS \\
+      \textbf{Frameworks \& Libraries}: React, Angular, gRPC, Protocol Buffers, Flask, libGDX, JUnit, Mockito, Google Test \\
+      \textbf{Cloud \& DevOps}: AWS (Lambda, API Gateway, DynamoDB, SQS, S3, CloudFront, CloudWatch, CDK), Docker, GitHub Actions \\
+      \textbf{Databases}: DynamoDB, SQLite \\
+      \textbf{Developer Tools}: Git, CMake, Maven, k6, JaCoCo, ThreadSanitizer, VS Code \\
+      \textbf{Concepts}: Distributed Systems, Fault Tolerance, Consistent Hashing, Concurrency, REST APIs, CI/CD, Infrastructure as Code \\
+      \textbf{Business}: Financial Accounting, Excel, PowerPoint, Sprint Planning \& Execution
+    }}
+  \resumeSubHeadingListEnd
+
+\end{document}
