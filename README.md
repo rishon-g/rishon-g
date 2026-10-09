@@ -16,7 +16,7 @@
 </picture>
 
 <p align="center">
-  <img src="assets/about.svg" width="100%" alt="School: Simon Fraser University. Major: Computer Science + Business (joint), class of 2028. 3.9 CGPA, Dean's and President's Honour Roll. Focus: backend, distributed systems, cloud infrastructure. Currently building MatchMesh, a fault-tolerant C++20 matchmaking cluster. Open to Software Engineering Co-op. Offline: strength training, the markets, sports." />
+  <img src="assets/about.svg" width="100%" alt="School: Simon Fraser University. Major: Computer Science + Business (joint), class of 2028. 3.89 CGPA, Dean's and President's Honour Roll. Focus: backend, distributed systems, cloud infrastructure. Currently building MatchMesh, a fault-tolerant C++20 matchmaking cluster. Open to Software Engineering Co-op. Offline: strength training, the markets, sports." />
 </p>
 
 <br />
