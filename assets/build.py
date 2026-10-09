@@ -189,7 +189,7 @@ ABOUT = [
     ("const", " rishon = {", None),
     ("key", "school", '"Simon Fraser University"'),
     ("key", "major", '"Computer Science + Business (joint), class of 2028"'),
-    ("key", "standing", '"3.9 CGPA · Dean\'s & President\'s Honour Roll"'),
+    ("key", "standing", '"3.89 CGPA · Dean\'s & President\'s Honour Roll"'),
     ("key", "focus", '["backend", "distributed systems", "cloud infra"]'),
     ("key", "building", '"MatchMesh: a fault-tolerant C++20 matchmaking cluster"'),
     ("key", "openTo", '"Software Engineering Co-op"'),
