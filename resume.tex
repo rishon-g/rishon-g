@@ -52,15 +52,18 @@
 % Custom commands
 
 % --- List Environments ---
+% Leftover space on the page is spread evenly between bullet points.
+% \bulletgap is the minimum gap; the page fills the rest automatically.
+\newcommand{\bulletgap}{-1pt}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=\bulletgap, parsep=0pt, topsep=2pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 % --- Item Commands ---
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{1pt}}
+    {#1}\par\vspace{0pt plus 1fill}
   }
 }
 
@@ -132,7 +135,7 @@
          \resumeItem{Executed client discovery, scoping, and sprint planning to translate business needs into technical requirements delivered on schedule}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
-    
+
 
 %-----------PROJECTS-----------
 \section{Projects}
@@ -142,21 +145,21 @@
   {\textbf{\href{https://github.com/StormHacks-BlackBay/trustline}{TrustLine}} $|$ \emph{TypeScript, React, Node.js, ElevenLabs, Gemini, Twilio, Supabase, Docker}}{Oct 2026}
   \resumeItemListStart
     \resumeItem{Architected a real-time audio intelligence pipeline streaming live phone calls from Twilio Media Streams to ElevenLabs Scribe v2 Realtime over WebSockets, transcribing \textbf{8 kHz} telephony audio with no transcoding and warning callers mid-call in \textbf{5 languages}}
-    \resumeItem{Engineered a dual-layer scam detection engine fusing a \textbf{$\sim$0.01 ms} rules layer across \textbf{12 scam tactics} with schema-constrained, Zod-validated LLM scoring (Google Gemini), achieving \textbf{100\% precision and recall} with \textbf{0 false positives} on an 18-call labelled set at \textbf{1.1 s} median latency}
+    \resumeItem{Engineered a dual-layer scam detection engine fusing a \textbf{$\sim$0.01 ms} rules layer across \textbf{12 scam tactics} with schema-constrained, Zod-validated LLM scoring (Google Gemini), achieving \textbf{100\% precision and recall} with \textbf{0 false positives} on a 17-call labelled set at \textbf{1.1 s} median latency}
     \resumeItem{Established an evaluation and CI framework measuring precision, recall and alert latency, gating every push through GitHub Actions with \textbf{187 automated tests} across \textbf{28 suites}}
-    \resumeItem{Hardened security and privacy with Twilio signature verification on webhooks and media streams, single-use transcription tokens, on-device PII redaction, consent-gated sharing and \textbf{10-minute} call caps}
     \resumeItem{Orchestrated production deployment on \textbf{\$0} infrastructure: a Dockerized call server on Railway with health-checked, path-filtered auto-deploys, and a React/Vite frontend with serverless APIs on Vercel}
   \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{\href{https://github.com/rishon-g/flashcart}{FlashCart}} $|$ \emph{Go, TypeScript, React, AWS Lambda, API Gateway, DynamoDB, SQS, CDK}}{Sep 2026}
+   \resumeProjectHeading
+      {\textbf{\href{https://github.com/rishon-g/flashcart}{FlashCart}} $|$ \emph{Go, TypeScript, React, AWS Lambda, DynamoDB, EventBridge, SQS, CDK}}{Sep 2026}
       \resumeItemListStart
-        \resumeItem{Spearheaded a serverless flash-sale API in Go on AWS Lambda and API Gateway, load-tested with k6 at \textbf{1,000+} concurrent users}
-        \resumeItem{Devised oversell-proof inventory reservations with DynamoDB conditional writes and idempotency keys, recording \textbf{0} oversold units}
-        \resumeItem{Orchestrated asynchronous order fulfillment through SQS with dead-letter queue retries, holding checkout p99 latency under \textbf{150ms}}
-        \resumeItem{Established infrastructure as code with AWS CDK in TypeScript and GitHub Actions CI/CD, deploying the full stack on every merge}
+        \resumeItem{Built a serverless flash-sale checkout in Go on AWS Lambda and API Gateway that sustained \textbf{$\sim$6,900 req/s} at \textbf{1,000} concurrent k6 users with \textbf{132 ms} average and \textbf{194 ms} p95 latency}
+        \resumeItem{Prevented overselling by committing the stock decrement and order insert in one DynamoDB transaction keyed on the client's idempotency key: \textbf{0} oversold units across \textbf{145,000+} requests, backed by a \textbf{500}-goroutine race test}
+        \resumeItem{Removed dual writes with a transactional outbox (DynamoDB Streams to EventBridge Pipes to SQS), an idempotent worker with compensating refunds, and a dead-letter queue with CloudWatch alarms}
+        \resumeItem{Defined the stack in AWS CDK with template assertion tests; GitHub Actions runs Go tests against DynamoDB Local and deploys through keyless OIDC on every push to main}
       \resumeItemListEnd
-    
+
+
     \resumeProjectHeading
       {\textbf{\href{https://github.com/rishon-g/graphite-gambit}{Graphite Gambit}} $|$ \emph{Java, libGDX, JUnit, Mockito, Maven, JaCoCo}}{Jan 2026}
       \resumeItemListStart
@@ -165,7 +168,7 @@
         \resumeItem{Automated a testing suite with JUnit and Mockito, achieving \textbf{71\%} branch coverage across core game packages}
       \resumeItemListEnd
 
-    \resumeProjectHeading
+     \resumeProjectHeading
       {\textbf{\href{https://github.com/rishon-g/rubiks-cube-solver}{Rubik's Cube Solver}} $|$ \emph{Java}}{Oct 2025}
       \resumeItemListStart
         \resumeItem{Programmed an optimal Rubik's Cube solver in Java using Iterative Deepening A* (IDA*) search, finding solutions in under \textbf{10s}}
@@ -179,11 +182,11 @@
   \resumeSubHeadingListStart
     \small{\item{
       \textbf{Languages}: Go, C++, TypeScript, Java, Python, SQL, C, JavaScript, HTML/CSS \\
-      \textbf{Frameworks \& Libraries}: React, Angular, gRPC, Protocol Buffers, Flask, libGDX, JUnit, Mockito, Google Test \\
-      \textbf{Cloud \& DevOps}: AWS (Lambda, API Gateway, DynamoDB, SQS, S3, CloudFront, CloudWatch, CDK), Docker, GitHub Actions \\
-      \textbf{Databases}: DynamoDB, SQLite \\
-      \textbf{Developer Tools}: Git, CMake, Maven, k6, JaCoCo, ThreadSanitizer, VS Code \\
-      \textbf{Concepts}: Distributed Systems, Fault Tolerance, Consistent Hashing, Concurrency, REST APIs, CI/CD, Infrastructure as Code \\
+      \textbf{Frameworks \& Libraries}: React, Node.js, Flask, gRPC, Protocol Buffers, Zod, libGDX, JUnit, Mockito \\
+      \textbf{Cloud \& DevOps}: AWS (Lambda, API Gateway, DynamoDB, SQS, EventBridge, S3, CloudFront, CDK), Docker, GitHub Actions \\
+      \textbf{Databases}: DynamoDB, PostgreSQL (Supabase), SQLite \\
+      \textbf{Developer Tools}: Git, CMake, Maven, k6, JaCoCo, VS Code \\
+      \textbf{Concepts}: Distributed Systems, Concurrency, Idempotency, Event-Driven Architecture, REST APIs, CI/CD, Infrastructure as Code \\
       \textbf{Business}: Financial Accounting, Excel, PowerPoint, Sprint Planning \& Execution
     }}
   \resumeSubHeadingListEnd
