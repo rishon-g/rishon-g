@@ -142,6 +142,15 @@
   \resumeSubHeadingListStart
 
   \resumeProjectHeading
+      {\textbf{\href{https://github.com/rishon-g/matchmesh}{MatchMesh}} $|$ \emph{C++20, gRPC, Protocol Buffers, CMake, GoogleTest, Docker, Angular}}{Oct 2026}
+      \resumeItemListStart
+        \resumeItem{Built a fault-tolerant matchmaking cluster of \textbf{5} C++20 nodes over gRPC, sharding queues on a consistent hash ring so a node failure remaps only \textbf{$\sim$17\%} of queues versus \textbf{$\sim$80\%} with modulo hashing}
+        \resumeItem{Engineered synchronous primary-backup replication with per-queue sequence numbers and epoch-fenced writes, plus heartbeat failure detection that fails a killed node's queues over in \textbf{1.3--1.5 s}}
+        \resumeItem{Wrote a chaos harness that kills nodes under load and an invariant checker: \textbf{0} players lost or double-matched across \textbf{11} kills and \textbf{79,000} players, after it exposed and drove fixes for \textbf{2} real bugs}
+        \resumeItem{Load-tested open-loop to \textbf{0.78 ms} p50 and \textbf{3.07 ms} p99 enqueue latency at 1,000 players/s; lock striping doubled throughput, verified by \textbf{231} tests (\textbf{165} under ThreadSanitizer)}
+      \resumeItemListEnd
+
+  \resumeProjectHeading
   {\textbf{\href{https://github.com/StormHacks-BlackBay/trustline}{TrustLine}} $|$ \emph{TypeScript, React, Node.js, ElevenLabs, Gemini, Twilio, Supabase, Docker}}{Oct 2026}
   \resumeItemListStart
     \resumeItem{Architected a real-time audio intelligence pipeline streaming live phone calls from Twilio Media Streams to ElevenLabs Scribe v2 Realtime over WebSockets, transcribing \textbf{8 kHz} telephony audio with no transcoding and warning callers mid-call in \textbf{5 languages}}
@@ -168,13 +177,6 @@
         \resumeItem{Automated a testing suite with JUnit and Mockito, achieving \textbf{71\%} branch coverage across core game packages}
       \resumeItemListEnd
 
-     \resumeProjectHeading
-      {\textbf{\href{https://github.com/rishon-g/rubiks-cube-solver}{Rubik's Cube Solver}} $|$ \emph{Java}}{Oct 2025}
-      \resumeItemListStart
-        \resumeItem{Programmed an optimal Rubik's Cube solver in Java using Iterative Deepening A* (IDA*) search, finding solutions in under \textbf{10s}}
-        \resumeItem{Constructed memory-efficient pattern databases using combinatorial indexing and factorial mapping for \textbf{$O(1)$} heuristic lookups}
-        \resumeItem{Compressed a \textbf{43-quintillion} state space into a \textbf{$\sim$2MB} footprint, keeping heuristic data fully in memory during search}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
@@ -182,11 +184,11 @@
   \resumeSubHeadingListStart
     \small{\item{
       \textbf{Languages}: Go, C++, TypeScript, Java, Python, SQL, C, JavaScript, HTML/CSS \\
-      \textbf{Frameworks \& Libraries}: React, Node.js, Flask, gRPC, Protocol Buffers, Zod, libGDX, JUnit, Mockito \\
+      \textbf{Frameworks \& Libraries}: React, Angular, Node.js, Flask, gRPC, Protocol Buffers, Zod, libGDX, JUnit, Mockito, GoogleTest \\
       \textbf{Cloud \& DevOps}: AWS (Lambda, API Gateway, DynamoDB, SQS, EventBridge, S3, CloudFront, CDK), Docker, GitHub Actions \\
       \textbf{Databases}: DynamoDB, PostgreSQL (Supabase), SQLite \\
-      \textbf{Developer Tools}: Git, CMake, Maven, k6, JaCoCo, VS Code \\
-      \textbf{Concepts}: Distributed Systems, Concurrency, Idempotency, Event-Driven Architecture, REST APIs, CI/CD, Infrastructure as Code \\
+      \textbf{Developer Tools}: Git, CMake, Maven, k6, JaCoCo, ThreadSanitizer, VS Code \\
+      \textbf{Concepts}: Distributed Systems, Fault Tolerance, Consistent Hashing, Concurrency, Idempotency, Event-Driven Architecture, CI/CD \\
       \textbf{Business}: Financial Accounting, Excel, PowerPoint, Sprint Planning \& Execution
     }}
   \resumeSubHeadingListEnd
