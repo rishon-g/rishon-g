@@ -191,8 +191,8 @@ ABOUT = [
     ("key", "major", '"Computer Science + Business (joint), class of 2028"'),
     ("key", "standing", '"3.89 CGPA · Dean\'s & President\'s Honour Roll"'),
     ("key", "focus", '["backend", "distributed systems", "cloud infra"]'),
-    ("key", "building", '"MatchMesh: a fault-tolerant C++20 matchmaking cluster"'),
-    ("key", "openTo", '"Software Engineering Co-op"'),
+    ("key", "latest", '"MatchMesh: fault-tolerant C++20 matchmaking"'),
+    ("key", "openTo", '"Software Engineering Co-op (Spring 2027)"'),
     ("key", "offline", '["strength training", "the markets", "sports"]'),
     ("close", "};", None),
 ]
@@ -231,18 +231,18 @@ def about() -> str:
 # --------------------------------------------------------------- projects ---
 PROJECTS = [
     {
+        "slug": "matchmesh", "name": "MatchMesh", "tag": "live demo", "color": CYAN,
+        "lines": ["Fault-tolerant C++20 matchmaking: any of five",
+                  "servers can crash without losing a player."],
+        "chips": ["1.3–1.5 s failover", "0 players lost", "p99 3.07 ms"],
+        "stack": "C++20 · gRPC · Protobuf · Wasm · Angular",
+    },
+    {
         "slug": "flashcart", "name": "FlashCart", "tag": "AWS · serverless", "color": AMBER,
         "lines": ["Serverless flash-sale checkout that holds 1,000",
                   "concurrent buyers to exactly the stock that exists."],
         "chips": ["~6.9k req/s", "194 ms p95", "0 oversold"],
         "stack": "Go · Lambda · DynamoDB · SQS · CDK · React",
-    },
-    {
-        "slug": "matchmesh", "name": "MatchMesh", "tag": "in progress", "color": CYAN,
-        "lines": ["Fault-tolerant matchmaking cluster: skill-based",
-                  "lobbies, consistent hashing, replication."],
-        "chips": ["4-player lobbies", "sharded queues", "TSan builds"],
-        "stack": "C++20 · gRPC · Protobuf · CMake · Docker",
     },
     {
         "slug": "trustline", "name": "TrustLine", "tag": "StormHacks", "color": PINK,
@@ -307,10 +307,10 @@ def card(p: dict) -> str:
 STACK = [
     ("languages", CYAN, ["C++", "Go", "Java", "Python", "TypeScript", "JavaScript", "C", "SQL", "HTML/CSS", "x86-64 asm"]),
     ("backend & cloud", AMBER, ["AWS Lambda", "DynamoDB", "SQS", "EventBridge", "API Gateway", "S3 + CloudFront",
-                                "gRPC", "Protobuf", "Flask", "Supabase", "Twilio"]),
-    ("frontend", PINK, ["React", "Vite", "TanStack Query", "Jinja"]),
-    ("infra & devops", VIOLET, ["AWS CDK", "Docker", "CMake", "GitHub Actions", "Vercel", "Maven", "Linux", "Git"]),
-    ("testing & perf", GREEN, ["JUnit 5", "Mockito", "JaCoCo", "Jest", "Vitest", "k6", "ThreadSanitizer", "DynamoDB Local"]),
+                                "gRPC", "Protobuf", "WebSockets", "Flask", "Supabase", "Twilio"]),
+    ("frontend", PINK, ["React", "Angular", "RxJS", "Vite", "TanStack Query", "WebAssembly", "Jinja"]),
+    ("infra & devops", VIOLET, ["AWS CDK", "Docker Compose", "CMake", "Emscripten", "GitHub Actions", "GitHub Pages", "Vercel", "Maven", "Linux", "Git"]),
+    ("testing & perf", GREEN, ["GoogleTest", "ThreadSanitizer", "chaos testing", "JUnit 5", "Mockito", "JaCoCo", "Jest", "Vitest", "k6", "DynamoDB Local"]),
 ]
 
 
