@@ -16,7 +16,7 @@
 </picture>
 
 <p align="center">
-  <img src="assets/about.svg" width="100%" alt="School: Simon Fraser University. Major: Computer Science + Business (joint), class of 2028. 3.89 CGPA, Dean's and President's Honour Roll. Focus: backend, distributed systems, cloud infrastructure. Currently building MatchMesh, a fault-tolerant C++20 matchmaking cluster. Open to Software Engineering Co-op. Offline: strength training, the markets, sports" />
+  <img src="assets/about.svg" width="100%" alt="School: Simon Fraser University. Major: Computer Science + Business (joint), class of 2028. 3.89 CGPA, Dean's and President's Honour Roll. Focus: backend, distributed systems, cloud infrastructure. Latest project: MatchMesh, fault-tolerant C++20 matchmaking. Open to Software Engineering Co-op for Spring 2027. Offline: strength training, the markets, sports" />
 </p>
 
 <br />
@@ -27,8 +27,8 @@
 </picture>
 
 <p align="center">
+  <a href="https://github.com/rishon-g/matchmesh"><img src="assets/project-matchmesh.svg" width="49%" alt="MatchMesh: fault-tolerant C++20 matchmaking where any of five servers can crash without losing a player. 1.3 to 1.5 s failover, 0 players lost in chaos testing, 3.07 ms p99. C++20, gRPC, Protobuf, WebAssembly, Angular." /></a>
   <a href="https://github.com/rishon-g/flashcart"><img src="assets/project-flashcart.svg" width="49%" alt="FlashCart: serverless flash-sale checkout on AWS. ~6.9k requests/s, 194 ms p95, zero oversold units. Go, Lambda, DynamoDB, SQS, CDK, React." /></a>
-  <a href="https://github.com/rishon-g/matchmesh"><img src="assets/project-matchmesh.svg" width="49%" alt="MatchMesh (in progress): fault-tolerant matchmaking cluster with skill-based lobbies, consistent hashing and replication. C++20, gRPC, Protobuf, CMake, Docker." /></a>
 </p>
 <p align="center">
   <a href="https://github.com/StormHacks-BlackBay/trustline"><img src="assets/project-trustline.svg" width="49%" alt="TrustLine (StormHacks): live, in-language scam-call warnings for newcomers to Canada. TypeScript, React, Twilio, ElevenLabs, Gemini." /></a>
@@ -39,6 +39,10 @@
   <a href="https://github.com/rishon-g/fallhacks-tindog"><img src="assets/project-tindog.svg" width="49%" alt="Tindog (FallHacks 2025): dog-profile matching app built in 12 hours by a 3-person team. Python, Flask, SQLite, Jinja." /></a>
 </p>
 
+<p align="center">
+  <sub>▶ <a href="https://rishon-g.github.io/matchmesh/"><b>Try the MatchMesh live demo</b></a>: crash servers in your browser and watch them fail over.</sub>
+</p>
+
 <br />
 
 <picture>
@@ -47,7 +51,7 @@
 </picture>
 
 <p align="center">
-  <img src="assets/stack.svg" width="100%" alt="Languages: C++, Go, Java, Python, TypeScript, JavaScript, C, SQL, HTML/CSS, x86-64 assembly. Backend and cloud: AWS Lambda, DynamoDB, SQS, EventBridge, API Gateway, S3 + CloudFront, gRPC, Protobuf, Flask, Supabase, Twilio. Frontend: React, Vite, TanStack Query, Jinja. Infra and DevOps: AWS CDK, Docker, CMake, GitHub Actions, Vercel, Maven, Linux, Git. Testing and performance: JUnit 5, Mockito, JaCoCo, Jest, Vitest, k6, ThreadSanitizer, DynamoDB Local." />
+  <img src="assets/stack.svg" width="100%" alt="Languages: C++, Go, Java, Python, TypeScript, JavaScript, C, SQL, HTML/CSS, x86-64 assembly. Backend and cloud: AWS Lambda, DynamoDB, SQS, EventBridge, API Gateway, S3 + CloudFront, gRPC, Protobuf, WebSockets, Flask, Supabase, Twilio. Frontend: React, Angular, RxJS, Vite, TanStack Query, WebAssembly, Jinja. Infra and DevOps: AWS CDK, Docker Compose, CMake, Emscripten, GitHub Actions, GitHub Pages, Vercel, Maven, Linux, Git. Testing and performance: GoogleTest, ThreadSanitizer, chaos testing, JUnit 5, Mockito, JaCoCo, Jest, Vitest, k6, DynamoDB Local." />
 </p>
 
 <br />
